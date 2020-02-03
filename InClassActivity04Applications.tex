@@ -1,0 +1,267 @@
+\documentclass[answers]{exam}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,margin=2cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath, hyperref}
+\usepackage{graphicx}
+\usepackage{paralist, pgfplots}
+%\setlength\FrameSep{4pt}
+
+
+
+
+
+
+\pdfpagewidth 8.5in
+ \pdfpageheight 11in
+
+
+%General
+
+
+
+
+
+
+
+
+
+
+
+
+
+%Theorem Environments
+
+\begin{document}
+
+
+\begin{center}
+	\hfill Sandi Xhumari \\ \textbf{$\triangleright$ In-class Activity Divide and Conquer 4.7 and 5.1 $\triangleleft$}\\
+\end{center}
+
+\textbf{Purpose:} To use integrals in understanding and solving application problems. This is the heart of all of Calculus 2, and the main reason Calculus is so widely applicable to so many different sciences.   \\
+
+\textbf{Knowledge/Skills and Criteria for Success:} After this activity you should be able to
+
+\begin{enumerate}[A.]
+	\item find the area enclosed between functions.
+	\item understand and find the average value of a quantity. 
+	\item solve work related problems.
+	\item find the volume of various solids.
+	\item 
+	\item 
+	
+\end{enumerate}
+
+\textbf{Task:} 
+
+
+\begin{questions}
+	
+\question Most of the Calculus 2 story problems we'll encounter can be solved by applying the following problem solving strategy, which I'll refer to as \textbf{Divide and Conquer!} Put this on your notecards for challenges.
+
+\begin{enumerate}[Step 1.]
+	\item Divide the larger problem into smaller ``\emph{similar}'' parts (slices).
+	\item Solve it for a general representative of those parts (slices).
+	\item Sum up the solution of those parts (slices) using summation notation.
+	\item Rewrite the sum as a Riemann sum.
+	\item Take the limit to form the corresponding definite integral.
+	\item Use various calculus techniques to solve it. 
+\end{enumerate}
+
+Use the above problem solving strategy to \textbf{setup but not solve} at least 3 different definite integrals computing the area of a circle of radius $r$. \textbf{Hint: Recall the ideas we came up with on the first few days of class.}\\
+
+\begin{enumerate}[I.]
+	\item Area of slice: \hspace{2in} Riemann Sum:\\
+	
+	Definite Integral: \\
+	
+	\item Area of slice: \hspace{2in} Riemann Sum:\\
+	
+	Definite Integral: \\
+	
+	\item Area of slice: \hspace{2in} Riemann Sum:\\
+	
+	Definite Integral: \\
+\end{enumerate}
+
+\question Sketch and compute the area of the region on the first quadrant enclosed by the graphs $y = 1/x$, $y = x$, and $y = 1/2$. You can use Desmos to help you out if you're stuck graphing, although I suggest trying it yourself first for at least one minute.\\
+
+
+Area of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\question \textbf{(Similar to hard homework question.)} Consider the region under $y = 12-3x^2$ and above the $x$-axis. Find the number $L$ such that the line $y = 3L$ cuts the area of this region in half. The solution involves solving a complicated equation for $L$. There's at least two different methods to setup definite integrals, but only one yields an exact answer easily. Consider using Desmos to help. 
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+
+\question Guess the statement of the Mean Value Theorem for Integrals from the animation I'll show in desmos.
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+
+\question You are traveling with velocity $v(t)$ that varies continuously over the interval $[a, b]$ and your position at time $t$ is given by $S(t)$. (How are $v(t)$ and $S(t)$ related?) State if any of the following formulas represents the average velocity A.V.$[a,b]$ for that time interval, and use this discussion to agree upon the general definition of the average value of a function on an interval $[a,b]$.
+
+\begin{enumerate}[(I)]
+	
+	\item $\displaystyle \frac{S(b)-S(a)}{b-a}$
+	
+	
+	\item $\displaystyle \frac{1}{b-a}\int_a^b v(t) dt$
+	
+	
+	\item $\displaystyle \lim\limits_{n\to \infty}\frac{v(c_1)+v(c_2)+\cdots v(c_n)}{n} = \lim\limits_{n\to \infty} \sum_{i=1}^n f(c_i) \frac{1}{n},$ where we split $[a, b]$ into $n$ equal subintervals and $c_i$ are any $x$-values on the $i$-th subinterval.
+	
+	
+	\item $\displaystyle v(c)$ for at least one $c$ between $a$ and $b$.
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+\end{enumerate}
+
+\newpage
+
+
+\question How much work is done lifting a 35 pound object from the ground to the top of a 20 foot building if the cable used weighs 2 pounds per foot? \textbf{Hint:} Work = Force $\times$ distance. A student last quarter did the following computation which resulted in the correct solution. Is this a coincidence, or will this method always yield the correct answer? Find at least two methods for computing the answer, and then explain student's answer.
+
+\begin{enumerate}[Step 1.]
+	
+	\item $35 \cdot 20 = 700$ foot-pound.	
+	
+	\item $35 \cdot 20 + (2 \cdot 20) \cdot 20 = 700 + 800 = 1500$ foot-pound.	
+	
+	
+	\item $\frac{700+1500}{2} = 1100$ foot-pound.
+	
+			
+\end{enumerate}
+
+I) Work for part: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vspace{1in}
+
+
+
+II) Work for part: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vspace{1in}
+
+Explanation of student's answer:
+
+\vspace{1in}
+
+\question A boneless baked turkey breast that is ten inches long from one
+end to the other is sliced up into very thin slices. Each slice
+has a cross-sectional area of $(-x^2 +10x)$ square inches for each
+$x$ between $0$ and $10$.  What is the volume of the turkey
+breast?
+
+\begin{enumerate}[(a)]
+	
+	\item $\int_0^{10} -x^2 +10x dx = 166.\bar{6}.$	
+	
+	\item $\int_0^{10} (-x^2 +10x)x dx = 833.\bar{3}.$	
+	
+	
+	\item $\frac{166.\bar{6}+833.\bar{3}}{2} = 500$.
+	
+	
+	\item none of the above.
+	
+	
+\end{enumerate}
+
+Volume of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vspace{1in}
+
+\question Slicing a carrot horizontally, we get slices with cross-section circles. If the slices are small enough, we can assume they're cylinders. Suppose you slice a carrot the long way.  What shape slices would you expect (approximately) given small slices?  How could you set up an expression for the volume of the whole carrot?
+
+Volume of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+	
+\vspace{1in}
+
+\question What is the volume of the solid formed by taking the the area between $y = \sin(x)$ and $y = 2$ on the interval $[0, 2\pi]$, and rotating it about $y = 2$? What if we were to rotate it about $y = -2$?
+
+Volume of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+
+\vspace{1in}
+
+\question Suppose the density of a cylindrical rod of length 10 m and cross-section radius of 0.1 m has a density of material varying lengthwise given by $\rho(x) = \frac{x^3}{(x^2+1)^3}$ kg/m$^3$, where $x$ is the distance from one of the rod's ends. What is the mass of the cylindrical rod? After selecting the correct answer, compute the definite integral to find the right numerical answer.
+
+
+\begin{enumerate}[(a)]
+	
+	\item $\int_0^{10} \frac{x^3}{(x^2+1)^3} dx = $	
+	
+	\item $\int_0^{10} \pi(0.1)^2x\left(\frac{x^3}{(x^2+1)^3}\right) dx = $	
+	
+	
+	\item $\int_0^{10} \pi(0.1x)^2\left(\frac{x^3}{(x^2+1)^3}\right) dx = $
+	
+	
+	\item none of the above.
+	
+	
+\end{enumerate}
+
+Mass of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vspace{1in}
+
+\question Please write below any feedback you would like to share about this handout. If you found any parts confusing due to wording or anything like that, please suggest fixes. Thank you!
+
+\vspace{1in}
+
+\end{questions}
+
+
+
+\end{document}

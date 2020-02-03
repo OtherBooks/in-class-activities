@@ -1,0 +1,255 @@
+\documentclass[answers]{exam}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,margin=2cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath, hyperref}
+\usepackage{graphicx}
+\usepackage{paralist, pgfplots}
+%\setlength\FrameSep{4pt}
+
+
+
+
+
+
+\pdfpagewidth 8.5in
+ \pdfpageheight 11in
+
+
+%General
+
+
+
+
+
+
+
+
+
+
+
+
+
+%Theorem Environments
+
+\begin{document}
+
+
+	\begin{center}
+	\hfill Sandi Xhumari \\ \textbf{$\triangleright$ In-class Activity 8.5-8.6 $\triangleleft$}\\
+\end{center}
+
+\textbf{Purpose:} To learn how to carry out trigonometric substitutions in order to solve harder integrals. \\
+
+\textbf{Knowledge/Skills and Criteria for Success:} After this activity you should be able to
+
+\begin{enumerate}[A.]
+	\item solve integrals involving a square root of a sum or difference of squares using trigonometric substitution.
+	\item solve integrals involving trigonometric functions.
+	\item 
+	\item
+	
+\end{enumerate}
+
+\textbf{Task:}
+
+
+\begin{questions}
+	
+\question Recall from precalculus the Pythagorean identities and the double angle formulas involving trigonometric functions below.
+
+\vspace{2in}
+
+
+\question Consider using trigonometric substitution whenever you see a sum or a difference of squares since you could create a right triangle using the given sides and relate them to one of the angles using a trigonometric function. Practice by solving the following integrals.
+
+\begin{enumerate}[(a)]
+	
+	\item $\displaystyle \int \frac{\sqrt{16x^2-49}}{x^4} dx =$
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	\item $\displaystyle \int \frac{x}{\sqrt{100+4x^2}}dx = $
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	
+	\item $\displaystyle \int \frac{\sqrt{25-z^8}}{z^5} dx =$ 
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	
+\end{enumerate}
+
+\question Determine the trignonometric substitution that can help solve integrals involving $X^2+A^2$, $X^2-A^2$, $A^2-X^2$, respectively. Draw a triangle for each and find $dx$.
+
+\vspace{3in}
+
+\question Why is the area of a circle of radius $R$ equal to $\pi R^2$? We have seen several proofs of this fact before in this course. Here's another possible argument: The equation of a circle of radius $R$ around the origin is $x^2+y^2=R^2$, so the upper half of it has equation $y = \sqrt{R^2-x^2}$. Find the following integral using a trigonometric substitution, and then use the result to deduce the area of a circle of radius $R$.\\
+
+$\displaystyle  \int \sqrt{R^2-x^2} dx = $
+
+\vspace{2in}
+
+\newpage
+
+
+\question Derive the following formulas we have used before using trigonometric substitution.
+
+\includegraphics[scale=0.3]{AntiDerivativeInverseTrig}
+
+
+\vspace{4in}
+
+
+\question Solve the following integrals involving powers of $\sin(x)$ or $\cos(x)$ and note the general patterns. Feel free to put into your notecard these patterns for the challenge.
+\begin{enumerate}[(a)]
+	
+	\item $\displaystyle \int \sin^4(x) dx =$
+	
+	\vspace{2in}
+
+	\newpage
+	
+	
+	\item $\displaystyle \int \cos^3(x) dx =$
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	
+	\item $\displaystyle \int \sin^2(x)\cos^2(x) dx =$ 
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	
+
+	
+\end{enumerate}
+
+\question Sometimes we face integrals with multiple angles so the following trig formulas are helpful. Use them to solve the following indefinite integral.
+
+ \[\sin(\alpha)\cos(\beta) = \frac{1}{2}(\sin(\alpha + \beta) + \sin(\alpha-\beta))\]  \[\sin(\alpha)\sin(\beta) = \frac{1}{2}(\cos(\alpha - \beta) - \cos(\alpha+\beta))\]
+\[\cos(\alpha)\cos(\beta) = \frac{1}{2}(\sin(\alpha + \beta) + \cos(\alpha-\beta))\]
+
+
+$\displaystyle \int \sin(x)\cos(3x) dx =$ 
+
+\newpage
+
+\question Develop the rules to solve integrals of the form $\displaystyle \int \tan^n(x)\sec^m(x) dx$ for various non-negative integers $n$ and $m$. Start with pure powers of $\tan(x)$ and $\sec(x)$ separately. What happens when you do a substitution with $u = \tan(x)$ or $u = \sec(x)$? Focus on the big patterns.
+
+\newpage
+
+\question Google: ``The world's sneakiest substitution is undoubtedly the tangent half-angle technique." This is what is used to find a the formula for antiderivatives of secant and cosicant in the previous formulas we had. This technique though works with trig integrals involving rational functions of sine and cosine.
+\begin{enumerate}[(a)]
+	
+	\item $\int \sec(x) dx = $
+	
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+	\vfill
+	
+	\item $\int \frac{1}{2+\cos(x)} dx =$
+	
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	\hfill \break
+	
+\end{enumerate}
+
+
+\end{questions}
+
+
+\end{document}

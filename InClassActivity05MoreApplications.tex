@@ -1,0 +1,208 @@
+\documentclass[answers]{exam}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,margin=2cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath, hyperref}
+\usepackage{graphicx}
+\usepackage{paralist, pgfplots}
+%\setlength\FrameSep{4pt}
+
+
+
+
+
+
+\pdfpagewidth 8.5in
+ \pdfpageheight 11in
+
+
+%General
+
+
+
+
+
+
+
+
+
+
+
+
+
+%Theorem Environments
+
+\begin{document}
+
+
+\begin{center}
+	\hfill Sandi Xhumari \\ \textbf{$\triangleright$ In-class Activity More Divide and Conquer 5.2-5.3 $\triangleleft$}\\
+\end{center}
+
+\textbf{Purpose:} To use integrals in understanding and solving more application problems.    \\
+
+\textbf{Knowledge/Skills and Criteria for Success:} After this activity you should be able to
+
+\begin{enumerate}[A.]
+	\item find the arc-length of a graph given either as a function or parametric equation.
+	\item find the surface area of an object we obtain by rotating a graph. 
+	\item solve more work related problems.
+	\item find the center of mass.
+	\item find volumes of tubes
+	\item find election winner
+	\item 
+	\item
+	
+	
+\end{enumerate}
+
+\textbf{Task:} 
+
+
+\begin{questions}
+	
+\question Recall the \textbf{Divide and Conquer} strategy:
+
+\begin{enumerate}[Step 1.]
+	\item Divide the larger problem into smaller \emph{similar} parts/slices.
+	\item Solve it for a general representative of those parts/slices.
+	\item Sum up the solution of those parts/slices using summation notation.
+	\item Rewrite the sum as a Riemann sum.
+	\item Take the limit to form the corresponding definite integral.
+	\item Use various calculus techniques to solve it. 
+\end{enumerate}
+
+
+\question Suppose a scientist is studying the behavior of a whale. She put a GPS tracker on it to track how much it swims per day. One day, the whale was right by her boat. We'll use this as time $t=0$. After 1 hour the whale was 3 miles North. At $t = 2$ it was 2 mile East and 4 miles North; at $t = 3$ it was 4 miles East and 4 miles North, and at time $t = 7$ the whale had returned to the starting position. Graph the path of the whale and estimate its total length.
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+\question The whale in the previous problem didn't really swim in a straight line most likely, so the scientist may be able to get a better approximation of the total length of the trip by checking the GPS more often. Our Divide and Conquer strategy is essentially the same. Use it to find the exact arc-length of a continuously differentiable function $y = f(x)$ for $x$ between $x = a$ and $x = b$. Why do we need $f(x)$ to be continuously differentiable?\\
+
+Length of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\newpage
+
+\question What is the arc-length of one period of $y = \sin(x)$? Just setup the definite integral and use desmos to approximate the exact answer.
+
+\begin{enumerate}[(a)]
+	\item $\displaystyle \int_0^{2\pi}\sin(x)dx.$ 
+	\item $\displaystyle \int_0^{2\pi}\cos(x)dx.$  
+	\item $\displaystyle \int_0^{2\pi}\sqrt{1+\cos^2(x)} dx.$
+	\item None of the above.	
+\end{enumerate}
+
+Length of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+
+
+\question The path of a whale most likely won't be a function of latitude nor longitude, but each coordinate will be a function of time $t$, that is the position can be described by a parametric equation $(x(t), y(t))$. Which of the following is the parametric equation arc-length formula for the time interval $[a, b]$?
+
+\begin{enumerate}[(a)]
+\item $\displaystyle \int_a^b \sqrt{1+\left(y'(t)\right)^2}dt$
+\item $\displaystyle \int_a^b \sqrt{1+\left(\frac{y'(t)}{x'(t)}\right)^2}dt$
+\item $\displaystyle \int_a^b \sqrt{\left(x'(t)\right)^2+\left(y'(t)\right)^2}dx$
+\item None of the above.
+\end{enumerate}
+
+\hfill \break
+\hfill \break
+
+\question Use the parametric formula for arc-length to find the length of the curve given by $x(t) = \cos(t)$ and $y(t) = \sin(t)$ over the interval $[0, 2\pi]$. See if you can do it in your head and find the answer without writing it down.
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+
+\question What is the outside surface area of a tube of radius $r$ and height $h$?
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+\question What is the surface area formed by rotating the function $y = x^3$ on $[0, 2]$ around the $x$-axis.
+
+Surface area of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+\question The general formula for surface area formed by a function $y = f(x)$ on $[a, b]$ rotated about the line $y = L$ is 
+
+  \begin{enumerate}[(a)]
+  	\item $\displaystyle \int 2\pi f(x)\sqrt{1+\left(f'(x)\right)^2}dx$
+  	\item $\displaystyle \int_a^b 2\pi |f(x)-L|\sqrt{1+\left(f'(x)\right)^2}dx$
+  	\item $\displaystyle \int_a^b 2\pi |f(x)-L|\sqrt{1+\left(f'(x)-L\right)^2}dx$
+  \item None of the above.
+\end{enumerate}
+
+\question What is the surface area formed by rotating the function $y = x^2$ on $[1, 3]$ around the $y$-axis.
+
+Surface area of slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+
+\question How much work do you do when drinking water in a cola glass using a straw to a point 3 inches above the top edge of the glass? Assume that the function $x = f(y)$ on $[0, 4]$ models the side edge of a cola glass with the bottom on the $x$-axis and the $y$-axis pointing vertically, and that the weight density of water is 62.5 pounds/ft$^3$ = 0.5787 ounces/in$^3$.
+
+Work for slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vfill
+
+\question  A trough is 3 meters long, 2 meters wide, and 1 meters deep. The vertical cross-section of the trough parallel to an end is shaped like an isosceles triangle (with height 1 meters, and base, on top, of length 2 meters). The trough is full of water (density 1000 kg/m$^3$). Find the amount of work in joules required to empty the trough by pumping the water over the top. (Note: Use $g=9.8$ m/s$^2$ as the acceleration due to gravity.) 
+
+Work for slice: \hspace{2in} Riemann Sum:\\
+
+Definite Integral: \\
+
+\vfill
+
+\newpage
+
+\question Create your own surface area or work problem(s) and use the Divide and Conquer method to solve it. If you got no ideas look at the homework questions.
+
+\vspace{7in}
+
+\question Please write below any feedback you would like to share about this handout. If you found any parts confusing due to wording or anything like that, please suggest fixes. Thank you!
+
+\end{questions}
+
+
+
+\end{document}
